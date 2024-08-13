@@ -1,0 +1,33 @@
+footer{
+    padding-top:1rem;
+    background:#737473;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:1rem;
+}
+
+.footer-contents{
+    padding-top:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:10px;
+}
+.footer-social-container{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    gap:.5rem;
+    align-items:center;
+}
+.footer-links a{
+    margin:1rem;
+}
+.footer-social-links a{
+    margin:1rem;
+}
+
