@@ -1,0 +1,8 @@
+/* .product-cards{
+    display:flex;
+    align-items:center;
+} */
+.cards{
+    display:flex;
+    gap:1rem;
+}

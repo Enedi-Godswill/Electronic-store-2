@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "image":"./images/model-6.jpg",
+        "discount":"50% off",
+        "brand":"brand-new",
+        "info":"first info about cloth",
+        "first":"$50.00",
+        "second":"$45.00"
+    },
+    {
+        "id":2,
+        "image":"./images/model-1.jfif",
+        "discount":"50% off",
+        "brand":"brand-new",
+        "info":"second info about cloth",
+        "first":"$50.00",
+        "second":"$45.00"
+    },
+    {
+        "id":3,
+        "image":"./images/model-1.jfif",
+        "discount":"50% off",
+        "brand":"brand-new",
+        "info":"third info about cloth",
+        "first":"$50.00",
+        "second":"$45.00"
+    },
+    {
+        "id":4,
+        "image":"./images/model-1.jfif",
+        "discount":"50% off",
+        "brand":"brand-new",
+        "info":"fifth info about cloth",
+        "first":"$50.00",
+        "second":"$45.00"
+    }
+]

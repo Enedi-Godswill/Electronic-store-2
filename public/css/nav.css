@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman';
+}
+html{
+    text-rendering:optimizeLegibility;
+    scroll-behavior:smooth;
+}
+button,
+input{
+    border:none;
+    background:none;
+    outline:none;
+}
+button,
+a{
+    cursor:pointer;
+}
+ul{
+    list-style:none;
+}
+img{
+    width:100%;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+    text-transform:capitalize;
+}
+section{
+    padding:1rem;
+}
+
+/* Nav Content */
+nav{
+    background:#fff;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    padding:.5rem;
+    box-shadow:0 0 3px #000;
+    z-index:9;
+}
+nav h1{
+    font-size:30px;
+}
+.nav-content{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+}
+/* Search box */
+.search-box{
+    display:flex;
+    align-items:center;
+    border:1px solid #000;
+    border-radius:5px;
+    width:16rem;
+    height:2.5rem;
+    overflow:hidden;
+    transition:.2s ease-in;
+}
+.search-box input{
+    font-size:18px;
+    color:#000;
+}
+.search-box .btn{
+    padding:5px;
+}
+/* nav cards */
+.nav-cards{
+    display:flex;
+    align-items:center;
+}
+.nav-cards a{
+    display:flex;
+    align-items:center;
+    padding:5px;
+    transition:.1s ease-in;
+}
+.nav-cards a:hover{
+    background:#5977ff;
+    border-radius:5px;
+    color:#fff;
+}
+.menu-btn{
+    display:none;
+}
+.close-btn{
+    display:none;
+}
+
+@media screen and (max-width:960px){
+    /* Search box */
+    .search-box{
+        width:2rem;
+    }
+    .search-box input{
+        display:none;
+    }
+    .search-box.active input{
+        display:flex;
+    }
+    .search-box.active{
+        width:16rem;
+    }
+    /* nav cards */
+    .nav-cards{
+        position:absolute;
+        display:block;
+        top:5rem;
+        right:1rem;
+        background:#fff;
+        padding:10px;
+        border-radius:5px;
+        opacity:0;
+        transform:scale(0);
+    }
+    .nav-cards.active{
+        opacity:1;
+        transform:scale(1);
+    }
+    /* menu btn */
+    .menu-btn{
+        display:flex;
+        transition:.1s ease-in;
+    }
+    .menu-btn.active .open-btn{
+        display:none;
+    }
+    .menu-btn.active .close-btn{
+        display:block;
+    }
+}
